@@ -21,7 +21,7 @@ function($) {
             var attrAlt = img.attr('alt');
             var attrWidth = img.attr('width');
             var attrHeight = img.attr('height');
-            var altImgElm = '<img class="product-image-photo-alt" src="' + newSource + '" height="' + attrHeight + '" width="' + attrWidth + '" alt="' + attrAlt + '"/>';
+            var altImgElm = '<img class="product-image-photo-alt" src="' + newSource + '" height="' + attrHeight + '" width="' + attrWidth + '" alt="' + attrAlt + '"  style="display:none;" />';
 
             img.before(altImgElm);
             altImg = context.find('img.product-image-photo-alt');
@@ -78,7 +78,7 @@ function($) {
                         var attrAlt = img.attr('alt');
                         var attrWidth = img.attr('width');
                         var attrHeight = img.attr('height');
-                        var altImgElm = '<img class="product-image-photo-alt" src="' + newSource + '" height="' + attrHeight + '" width="' + attrWidth + '" alt="' + attrAlt + '"/>';
+                        var altImgElm = '<img class="product-image-photo-alt" src="' + newSource + '" height="' + attrHeight + '" width="' + attrWidth + '" alt="' + attrAlt + '" style="display:none;"/>';
 
                         img.before(altImgElm);
                         altImg = _this.find('img.product-image-photo-alt');
