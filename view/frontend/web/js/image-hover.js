@@ -73,8 +73,8 @@ function($) {
             var newSource = _this.find('a.product-item-photo').data('altimg');
             _this.hover(function() { 
                 var altImg = _this.find('img.product-image-photo-alt');
-                if (newSource) {
-                    if (!altImg.length) {
+                if (!altImg.length) {
+                    if (newSource) {
                         var attrAlt = img.attr('alt');
                         var attrWidth = img.attr('width');
                         var attrHeight = img.attr('height');
@@ -89,11 +89,10 @@ function($) {
                             img.hide();
                             altImg.show();
                         });
-
-                    }else{
-                        altImg.show()
-                        img.hide();
                     }
+                }else{
+                    altImg.show()
+                    img.hide();
                 }
             }, function() {
                 var altImg = _this.find('img.product-image-photo-alt');
