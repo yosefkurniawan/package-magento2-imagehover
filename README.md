@@ -18,7 +18,8 @@ On product list template, call the available alternative image of a product like
 ```$_hoverImage = $_helperGallery->getHoverImage($_product);```
 
 Then add data-altimg attribute on prdocut image anchor tag, e.g:
-```<a href="<?php /* @escapeNotVerified */ echo $_product->getProductUrl() ?>" class="product photo product-item-photo" tabindex="-1" data-altimg="<?php echo $_hoverImage ?>">
+```
+<a href="<?php /* @escapeNotVerified */ echo $_product->getProductUrl() ?>" class="product photo product-item-photo" tabindex="-1" data-altimg="<?php echo $_hoverImage ?>">
       <?php echo $productImage->toHtml(); ?>
-</a>```
-
+</a>
+```
