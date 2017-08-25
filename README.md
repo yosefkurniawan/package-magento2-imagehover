@@ -13,7 +13,7 @@ Magento_Swatch
 ### Description
 This module is used for showing alternative image on hovering product item on product list.
 
-### Houw to use
+### How to use
 On product list template, call the available alternative image of a product like so:
 ```$_hoverImage = $_helperGallery->getHoverImage($_product);```
 
