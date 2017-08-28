@@ -15,7 +15,10 @@ This module is used for showing alternative image on hovering product item on pr
 
 ### How to use
 On product list template, call the available alternative image of a product like so:
-```$_hoverImage = $_helperGallery->getHoverImage($_product);```
+```
+$_helperGallery = $this->helper('Icube\ImageHover\Helper\Data');
+$_hoverImage = $_helperGallery->getHoverImage($_product);
+```
 
 Then add data-altimg attribute on prdocut image anchor tag, e.g:
 ```
